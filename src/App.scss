@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-image: linear-gradient(to bottom, royalblue, cornflowerblue, deepskyblue, white);
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  .grass {
+    background-color: darkgreen;
+    height: 50vh;
+  }
+}
+
+.App-link {
+  color: #282c34;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

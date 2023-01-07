@@ -1,0 +1,123 @@
+
+.page-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    .building {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 68%;
+    
+        .antenna {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .antenna-base {
+                background-color: #282c34;
+                height: 40px;
+                width: 3px;
+            }
+    
+            .app-logo {
+                height: 4vmin;
+                pointer-events: none;        }
+        }
+        
+        .base {
+            background-color: darkgray;
+            height: 600px;
+            width: 250px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+            border: 2px solid slategray;
+
+                .elevator-car {
+                    width: 225px;
+                    display: flex;
+                    flex-direction: row;
+                    border-bottom: 2px solid #282c34;
+                    margin-left: 12px;
+
+                    &.green {
+                        background-color: #32CD32;
+                    }
+
+                    .floor {
+                        background-color: lightgray;
+                        width: 50px;
+                        height: 48px;
+                        border: 1px solid white;
+                        margin-right: 10px;
+                        margin-left: 39%;
+
+                    .up-down-buttons {
+                        width: 54px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .controls {
+        width: 290px;
+        min-width: 290px;
+        background-image: linear-gradient(to bottom, gray , white, gray);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 5px solid darkgoldenrod;
+        margin-left: 10px;
+        height: 525px;
+      
+        .control-title {
+            background-color: darkgoldenrod;
+            position: fixed;
+            width: inherit;
+            height: 40px;
+            top: 0;
+            font-family: Orbitron, Arial, Helvetica, sans-serif;
+        }
+
+        .number-buttons {
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            margin: auto;
+
+            .number-button {
+                height: 65px;
+                width: 65px;
+                border-radius: 50%;
+                margin: 10px;
+                font-family: Orbitron, Arial, Helvetica, sans-serif;
+                font-size: 26px;
+                background-color: silver;
+
+                &.green {
+                    outline: 6px solid #32CD32;
+                }
+            }
+
+        }
+      }
+}
+
+
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .app-logo {
+      animation: App-logo-spin infinite 20s linear;
+      position: relative;
+      top: 10px;
+    }
+  }
